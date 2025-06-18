@@ -18,7 +18,7 @@ export default function TicketDetail() {
     <div className="flex">
       <Sidebar />
       <main className="p-10 w-full">
-        <h1 className="text-3xl font-semibold mb-6">チケット詳細</h1>
+        <h1 className="text-3xl font-semibold mb-6">起案詳細</h1>
         {ticket ? (
           <div className="space-y-4">
             {Object.entries(ticket).map(([key, value]) => (
