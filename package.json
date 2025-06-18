@@ -1,5 +1,5 @@
 {
-  "name": "csv-ticket-viewer-v4",
+  "name": "csv-ticket-viewer-v4.1",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
