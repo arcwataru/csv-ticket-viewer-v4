@@ -20,7 +20,7 @@ export default function Tickets() {
     <div className="flex">
       <Sidebar />
       <main className="p-10 w-full">
-        <h1 className="text-3xl font-semibold mb-6">チケット一覧</h1>
+        <h1 className="text-3xl font-semibold mb-6">起案一覧</h1>
         <input
           type="text"
           placeholder="件名または申請者名で検索"
