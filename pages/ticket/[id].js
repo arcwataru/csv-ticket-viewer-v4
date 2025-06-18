@@ -29,7 +29,7 @@ export default function TicketDetail() {
             ))}
           </div>
         ) : (
-          <p>チケットが見つかりません。</p>
+          <p>起案が見つかりません。</p>
         )}
       </main>
     </div>
