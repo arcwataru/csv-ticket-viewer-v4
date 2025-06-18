@@ -27,10 +27,10 @@ export default function Home() {
   return (
     <div className="flex">
       <Sidebar />
-      <main className="p-8 w-full bg-gray-50 min-h-screen">
-        <h1 className="text-3xl font-extrabold text-gray-800 mb-6">CSV Ticket Viewer</h1>
-        <p className="mb-4">CSVファイルをアップロードしてください。既存データに追加されます。</p>
-        <input type="file" accept=".csv" onChange={handleFileUpload} className="mb-4" />
+      <main className="p-10 w-full">
+        <h1 className="text-4xl font-bold mb-6">CSV Ticket Viewer</h1>
+        <p className="mb-4 text-gray-600">CSVファイルをアップロードしてください。既存データに追加されます。</p>
+        <input type="file" accept=".csv" onChange={handleFileUpload} className="border rounded px-4 py-2" />
       </main>
     </div>
   );

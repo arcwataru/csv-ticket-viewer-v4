@@ -24,15 +24,15 @@ export default function DeletePage() {
   return (
     <div className="flex">
       <Sidebar />
-      <main className="p-8 w-full bg-gray-50 min-h-screen">
-        <h1 className="text-3xl font-extrabold text-gray-800 mb-6">チケット削除</h1>
-        {message && <p className="mb-4 text-green-600 font-semibold">{message}</p>}
+      <main className="p-10 w-full">
+        <h1 className="text-3xl font-semibold mb-6">チケット削除</h1>
+        {message && <p className="text-green-600 mb-4">{message}</p>}
         {tickets.map((ticket, index) => (
-          <div key={index} className="flex items-center justify-between border border-gray-300 rounded-xl p-4 mb-4 bg-white shadow-sm">
+          <div key={index} className="flex justify-between items-center bg-white p-4 rounded border shadow mb-4">
             <div>
-              <p className="font-bold">No: {ticket['No'] || index + 1}</p>
-              <p className="text-sm text-gray-700">件名: {ticket['件名'] || '未設定'}</p>
-              <p className="text-sm text-gray-700">申請者: {ticket['申請者名'] || '不明'}</p>
+              <p className="font-semibold">No: {ticket['No'] || index + 1}</p>
+              <p className="text-gray-700 text-sm">件名: {ticket['件名']}</p>
+              <p className="text-gray-700 text-sm">申請者: {ticket['申請者名']}</p>
             </div>
             <button
               onClick={() => handleDelete(index)}
