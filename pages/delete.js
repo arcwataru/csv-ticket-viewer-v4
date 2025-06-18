@@ -11,13 +11,13 @@ export default function DeletePage() {
   }, []);
 
   const handleDelete = (indexToRemove) => {
-    const confirmed = window.confirm('本当にこのチケットを削除しますか？');
+    const confirmed = window.confirm('本当にこの起案を削除しますか？');
     if (!confirmed) return;
 
     const newTickets = tickets.filter((_, index) => index !== indexToRemove);
     setTickets(newTickets);
     localStorage.setItem('csvData', JSON.stringify(newTickets));
-    setMessage('チケットを削除しました。');
+    setMessage('起案を削除しました。');
     setTimeout(() => setMessage(''), 3000);
   };
 
@@ -25,7 +25,7 @@ export default function DeletePage() {
     <div className="flex">
       <Sidebar />
       <main className="p-10 w-full">
-        <h1 className="text-3xl font-semibold mb-6">チケット削除</h1>
+        <h1 className="text-3xl font-semibold mb-6">起案削除</h1>
         {message && <p className="text-green-600 mb-4">{message}</p>}
         {tickets.map((ticket, index) => (
           <div key={index} className="flex justify-between items-center bg-white p-4 rounded border shadow mb-4">
