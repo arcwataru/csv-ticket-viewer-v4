@@ -28,7 +28,7 @@ export default function Home() {
     <div className="flex">
       <Sidebar />
       <main className="p-10 w-full">
-        <h1 className="text-4xl font-bold mb-6">CSV Ticket Viewer</h1>
+        <h1 className="text-4xl font-bold mb-6">CSV で起案情報を登録する</h1>
         <p className="mb-4 text-gray-600">CSVファイルをアップロードしてください。既存データに追加されます。</p>
         <input type="file" accept=".csv" onChange={handleFileUpload} className="border rounded px-4 py-2" />
       </main>
