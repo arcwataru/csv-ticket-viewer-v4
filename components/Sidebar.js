@@ -7,7 +7,7 @@ export default function Sidebar() {
       <nav className="space-y-4 text-sm">
         <Link href="/" className="block hover:text-blue-600">CSVアップロード</Link>
         <Link href="/tickets" className="block hover:text-blue-600">起案一覧</Link>
-        <Link href="/delete" className="block hover:text-blue-600">起案削除</Link>
+        <Link href="/delete" className="block hover:text-blue-600">起案データの削除</Link>
       </nav>
     </div>
   );
